@@ -9,31 +9,42 @@
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: #f0f8ff;
+      overflow: hidden;
+    }
+    .book {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
+      width: 100vw;
+      height: 100vh;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
     }
     .page {
-      max-width: 800px;
-      padding: 20px;
+      flex: 0 0 100vw;
+      scroll-snap-align: start;
+      padding: 40px;
+      box-sizing: border-box;
       background: white;
-      margin: 30px auto;
-      border-radius: 20px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-right: 1px solid #ddd;
     }
     .page h1 {
-      font-size: 1.8em;
+      font-size: 2em;
       color: #0d47a1;
+      margin-bottom: 20px;
     }
     .page p {
       font-size: 1.2em;
+      line-height: 1.6;
+      max-width: 600px;
+      text-align: center;
     }
     .ar-link {
       display: inline-block;
-      margin-top: 10px;
-      padding: 10px 15px;
+      margin-top: 20px;
+      padding: 10px 20px;
       background: #2196f3;
       color: white;
       border-radius: 8px;
@@ -43,34 +54,36 @@
   </style>
 </head>
 <body>
-  <div class="page">
-    <h1>1. Güneşle Uyanmak</h1>
-    <p>Geleceğin şehirlerinde evler kendi enerjisini üretecek. Bu sabah, güneş panelleriyle çalışan evimizde uyandım. Camlar kendiliğinden açıldı ve hafif müzikle yeni gün başladı.</p>
-    <a class="ar-link" href="https://your-webar-link-1.com" target="_blank">AR ile Görüntüle</a>
-  </div>
+  <div class="book">
+    <div class="page">
+      <h1>1. Güneşle Uyanmak</h1>
+      <p>Sabah gözlerimi açtığımda odam yumuşak bir ışıkla doluydu. Perdeler otomatik olarak açıldı ve güneş enerjisiyle çalışan evim yeni güne hazırdı. Kahvaltımı hazırlayan robot, bugünkü hava durumunu ve haberleri bana hologramla sundu.</p>
+      <a class="ar-link" href="https://your-webar-link-1.com" target="_blank">AR ile Görüntüle</a>
+    </div>
 
-  <div class="page">
-    <h1>2. Uçan Arabayla Okula</h1>
-    <p>Artık trafik yok! Okula uçan arabamla gittim. Sadece 3 dakikada gökdelenlerin arasından süzülerek okulun çatısına iniş yaptım.</p>
-    <a class="ar-link" href="https://your-webar-link-2.com" target="_blank">AR ile Görüntüle</a>
-  </div>
+    <div class="page">
+      <h1>2. Uçan Arabayla Okula</h1>
+      <p>Dışarı çıktığımda uçan arabam kapıda hazırdı. Güneş enerjisiyle çalışan bu sessiz araçla gökyüzünden okula gittim. Şehrin üzerinde süzülürken parklar, yeşil çatılar ve rüzgar türbinleri dikkatimi çekti. Sadece 3 dakikada okuldaydım.</p>
+      <a class="ar-link" href="https://your-webar-link-2.com" target="_blank">AR ile Görüntüle</a>
+    </div>
 
-  <div class="page">
-    <h1>3. Hologram Öğretmenle Ders</h1>
-    <p>Öğretmenim sınıfta değildi ama hologramıyla bizimleydi. Sorularımıza cevap verdi, tahtada animasyonlarla ders anlattı.</p>
-    <a class="ar-link" href="https://your-webar-link-3.com" target="_blank">AR ile Görüntüle</a>
-  </div>
+    <div class="page">
+      <h1>3. Hologram Öğretmenle Ders</h1>
+      <p>Okulda sınıfa girdiğimde, öğretmenimiz hologram olarak karşımızdaydı. Büyük bir etkileşimli ekran aracılığıyla konuları anlatıyor, bizden gelen soruları gerçek zamanlı olarak cevaplıyordu. Tüm sınıf arkadaşlarım gözlüklerle derse katıldı.</p>
+      <a class="ar-link" href="https://your-webar-link-3.com" target="_blank">AR ile Görüntüle</a>
+    </div>
 
-  <div class="page">
-    <h1>4. Sanatla Kodlama</h1>
-    <p>Ders sonrası arkadaşlarımızla birlikte kodlama yaparak interaktif bir sanat eseri oluşturduk. Renkler, sesler ve ışıklarla dolu bu eser tamamen bizim hayal gücümüzün ürünüydü.</p>
-    <a class="ar-link" href="https://your-webar-link-4.com" target="_blank">AR ile Görüntüle</a>
-  </div>
+    <div class="page">
+      <h1>4. Sanatla Kodlama</h1>
+      <p>Ders sonrası sanat ve teknoloji sınıfındaydık. Kod yazarak renkli ışıklar, ses efektleri ve hareketli şekiller oluşturduk. Her birimiz kendi interaktif sanat eserimizi tasarladık. Bu eserler okul bahçesindeki dijital galeride sergilendi.</p>
+      <a class="ar-link" href="https://your-webar-link-4.com" target="_blank">AR ile Görüntüle</a>
+    </div>
 
-  <div class="page">
-    <h1>5. Robotlarla Akşam Oyunları</h1>
-    <p>Akşam olduğunda gökdelenlerin bahçesinde robot arkadaşlarımızla oyun oynadık. Onlar bizim oyun tarzımıza göre hareket ediyor, birlikte eğleniyorduk.</p>
-    <a class="ar-link" href="https://your-webar-link-5.com" target="_blank">AR ile Görüntüle</a>
+    <div class="page">
+      <h1>5. Robotlarla Akşam Oyunları</h1>
+      <p>Gün batımında arkadaşlarımla birlikte robot köpekler ve yapay zekâ destekli oyun robotlarıyla bahçede vakit geçirdik. Oyunlarımız, hareketimize ve tercihlerimize göre şekilleniyordu. Teknoloji ve doğa iç içeydi.</p>
+      <a class="ar-link" href="https://your-webar-link-5.com" target="_blank">AR ile Görüntüle</a>
+    </div>
   </div>
 </body>
 </html>
