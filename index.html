@@ -2,13 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Future City - AR Digital Book</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f0f8ff;
       overflow: hidden;
     }
     .book {
@@ -20,71 +18,42 @@
     }
     .page {
       flex: 0 0 100vw;
+      height: 100vh;
       scroll-snap-align: start;
-      padding: 40px;
-      box-sizing: border-box;
       background-size: cover;
       background-position: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      border-right: 1px solid #ddd;
-      color: white;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
-    }
-    .page h1 {
-      font-size: 2em;
-      margin-bottom: 20px;
-    }
-    .page p {
-      font-size: 1.2em;
-      line-height: 1.6;
-      max-width: 600px;
-      text-align: center;
+      position: relative;
     }
     .ar-link {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background: #2196f3;
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 16px;
+      background: rgba(0, 0, 0, 0.7);
       color: white;
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
+      font-family: sans-serif;
     }
   </style>
 </head>
 <body>
   <div class="book">
     <div class="page" style="background-image: url('https://raw.githubusercontent.com/lemonfacx/artstem-book/main/1.png');">
-      <h1>1. Güneşle Uyanmak</h1>
-      <p>Sabah gözlerimi açtığımda odam yumuşak bir ışıkla doluydu. Perdeler otomatik olarak açıldı ve güneş enerjisiyle çalışan evim yeni güne hazırdı. Kahvaltımı hazırlayan robot, bugünkü hava durumunu ve haberleri bana hologramla sundu.</p>
-      <a class="ar-link" href="https://your-webar-link-1.com" target="_blank">AR ile Görüntüle</a>
+      <a class="ar-link" href="https://your-webar-link-1.com" target="_blank">AR ile Gör</a>
     </div>
-
     <div class="page" style="background-image: url('https://raw.githubusercontent.com/lemonfacx/artstem-book/main/2.png');">
-      <h1>2. Uçan Arabayla Okula</h1>
-      <p>Dışarı çıktığımda uçan arabam kapıda hazırdı. Güneş enerjisiyle çalışan bu sessiz araçla gökyüzünden okula gittim. Şehrin üzerinde süzülürken parklar, yeşil çatılar ve rüzgar türbinleri dikkatimi çekti. Sadece 3 dakikada okuldaydım.</p>
-      <a class="ar-link" href="https://your-webar-link-2.com" target="_blank">AR ile Görüntüle</a>
+      <a class="ar-link" href="https://your-webar-link-2.com" target="_blank">AR ile Gör</a>
     </div>
-
     <div class="page" style="background-image: url('https://raw.githubusercontent.com/lemonfacx/artstem-book/main/3.png');">
-      <h1>3. Hologram Öğretmenle Ders</h1>
-      <p>Okulda sınıfa girdiğimde, öğretmenimiz hologram olarak karşımızdaydı. Büyük bir etkileşimli ekran aracılığıyla konuları anlatıyor, bizden gelen soruları gerçek zamanlı olarak cevaplıyordu. Tüm sınıf arkadaşlarım gözlüklerle derse katıldı.</p>
-      <a class="ar-link" href="https://your-webar-link-3.com" target="_blank">AR ile Görüntüle</a>
+      <a class="ar-link" href="https://your-webar-link-3.com" target="_blank">AR ile Gör</a>
     </div>
-
     <div class="page" style="background-image: url('https://raw.githubusercontent.com/lemonfacx/artstem-book/main/4.png');">
-      <h1>4. Sanatla Kodlama</h1>
-      <p>Ders sonrası sanat ve teknoloji sınıfındaydık. Kod yazarak renkli ışıklar, ses efektleri ve hareketli şekiller oluşturduk. Her birimiz kendi interaktif sanat eserimizi tasarladık. Bu eserler okul bahçesindeki dijital galeride sergilendi.</p>
-      <a class="ar-link" href="https://your-webar-link-4.com" target="_blank">AR ile Görüntüle</a>
+      <a class="ar-link" href="https://your-webar-link-4.com" target="_blank">AR ile Gör</a>
     </div>
-
     <div class="page" style="background-image: url('https://raw.githubusercontent.com/lemonfacx/artstem-book/main/5.png');">
-      <h1>5. Robotlarla Akşam Oyunları</h1>
-      <p>Gün batımında arkadaşlarımla birlikte robot köpekler ve yapay zekâ destekli oyun robotlarıyla bahçede vakit geçirdik. Oyunlarımız, hareketimize ve tercihlerimize göre şekilleniyordu. Teknoloji ve doğa iç içeydi.</p>
-      <a class="ar-link" href="https://your-webar-link-5.com" target="_blank">AR ile Görüntüle</a>
+      <a class="ar-link" href="https://your-webar-link-5.com" target="_blank">AR ile Gör</a>
     </div>
   </div>
 </body>
